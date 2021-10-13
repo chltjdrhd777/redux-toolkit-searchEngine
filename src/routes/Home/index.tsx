@@ -1,12 +1,11 @@
 import React from "react";
 import { H } from "components/Home";
+import HomeHeader from "./HomeHeader";
 
 function Home() {
   return (
     <H.Media>
-      <H.Header>
-        <h1>hi</h1>
-      </H.Header>
+      <HomeHeader />
     </H.Media>
   );
 }

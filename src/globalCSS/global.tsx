@@ -60,6 +60,10 @@ const globalCSS = css`
     color: var(---dark-clr);
   }
 
+  ul {
+    list-style-type: none;
+  }
+
   .container {
     padding: 0 3rem;
   }
