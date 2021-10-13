@@ -1,11 +1,12 @@
 import styled from "@emotion/styled/macro";
 
+//commonly used component
 export const B = {
-  BaseHeader: styled.header``,
-  BaseMain: styled.main``,
-  BaseFooter: styled.footer``,
-  BaseAside: styled.aside``,
-  BaseContainer: styled.div`
+  Header: styled.header``,
+  Main: styled.main``,
+  Footer: styled.footer``,
+  Aside: styled.aside``,
+  Container: styled.div`
     width: 100%;
     max-width: 100%;
     padding: 0 3rem;
