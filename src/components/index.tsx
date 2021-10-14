@@ -11,4 +11,6 @@ export const B = {
     max-width: 100%;
     padding: 0 3rem;
   `,
+  Ul: styled.ul``,
+  Nav: styled.nav``,
 };

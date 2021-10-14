@@ -25,6 +25,7 @@ export const colors = {
   mainColor: "#E7286A",
   waringColor: "#ff0000",
   starColor: "#fd4",
+  purple: "#7027A0",
 } as const;
 
 export const fontSizes = {
