@@ -26,6 +26,8 @@ export const colors = {
   waringColor: "#ff0000",
   starColor: "#fd4",
   purple: "#7027A0",
+  gradient: "linear-gradient(to right, #fa9e2c, #8f50fb)",
+  gradientAlt: "linear-gradient(to right, #8f50fb, #350a4f)",
 } as const;
 
 export const fontSizes = {

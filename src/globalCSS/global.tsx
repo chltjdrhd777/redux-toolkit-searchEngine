@@ -63,10 +63,6 @@ const globalCSS = css`
   ul {
     list-style-type: none;
   }
-
-  .container {
-    padding: 0 3rem;
-  }
 `;
 
 function GlobalStyle() {
