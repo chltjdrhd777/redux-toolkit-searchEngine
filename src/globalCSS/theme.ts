@@ -1,5 +1,11 @@
 import styled from "@emotion/styled/macro";
 
+//!!! 다음 프로젝트에서 바꿀 부분
+//!! 디자인적 분리와 재활용성 => className을 이용한 css로
+//!! 기능적 분리와 재활용성 => emotion styled를 이용한 component 단위의 조각 만들기
+
+//# 즉, 관심사 분리가 필요
+
 //@ CSS PART START ///////////////////////////////////////////////////////////////
 export const calcRem = (px: number) => `${px / 16}rem` as const;
 

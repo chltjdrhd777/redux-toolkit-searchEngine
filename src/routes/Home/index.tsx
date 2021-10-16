@@ -1,14 +1,13 @@
 import React from "react";
-import { H } from "components/Home";
-import HomeHeader from "./HomeHeader";
-import HomeMain from "./HomeMain";
+import HomeHeader from "./Header";
+import HomeMain from "./Main";
 
 function Home() {
   return (
-    <H.Media>
+    <>
       <HomeHeader />
       <HomeMain />
-    </H.Media>
+    </>
   );
 }
 

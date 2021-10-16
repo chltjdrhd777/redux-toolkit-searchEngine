@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import { H } from "components/Home";
+import { Header, Nav, Logo } from "components/styled/Header.styled";
+import { B } from "components/styled";
 import { Link } from "react-router-dom";
-import Logo from "assets/images/logo.png";
+import LogoImg from "assets/images/logo.png";
 
 function HomeHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <H.Header>
-      <H.Container>
-        <H.Nav menuOpen={menuOpen}>
-          <Link to="/" className="logo">
-            <img src={Logo} alt="" />
-          </Link>
+    <Header>
+      <B.Container>
+        <Nav menuOpen={menuOpen}>
+          <Logo src={LogoImg} alt="logo" />
 
           <div className="hamberger-menu" onClick={() => setMenuOpen((prev) => !prev)}>
             <i className="fas fa-bars"></i>
@@ -50,9 +49,9 @@ function HomeHeader() {
               </a>
             </li>
           </ul>
-        </H.Nav>
-      </H.Container>
-    </H.Header>
+        </Nav>
+      </B.Container>
+    </Header>
   );
 }
 

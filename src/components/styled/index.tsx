@@ -2,15 +2,15 @@ import styled from "@emotion/styled/macro";
 
 //commonly used component
 export const B = {
-  Header: styled.header``,
-  Main: styled.main``,
-  Footer: styled.footer``,
-  Aside: styled.aside``,
   Container: styled.div`
     width: 100%;
     max-width: 100%;
     padding: 0 3rem;
   `,
+  Header: styled.header``,
+  Main: styled.main``,
+  Footer: styled.footer``,
+  Aside: styled.aside``,
   Section: styled.section``,
   Ul: styled.ul``,
   Nav: styled.nav``,
@@ -24,4 +24,5 @@ export const B = {
     background-color: ${({ theme }) => theme.colors.mainColor};
     border-radius: 10rem;
   `,
+  Form: styled.form``,
 };
