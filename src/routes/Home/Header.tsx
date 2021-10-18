@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Header, Nav, Logo } from "components/styled/Header.styled";
+import { Header, Nav, Logo, HambergerMenu, NavList } from "components/styled/Home.styled";
 import { B } from "components/styled";
 import { Link } from "react-router-dom";
 import LogoImg from "assets/images/logo.png";
@@ -13,12 +13,12 @@ function HomeHeader() {
         <Nav menuOpen={menuOpen}>
           <Logo src={LogoImg} alt="logo" />
 
-          <div className="hamberger-menu" onClick={() => setMenuOpen((prev) => !prev)}>
+          <HambergerMenu menuOpen={menuOpen} onClick={() => setMenuOpen((prev) => !prev)}>
             <i className="fas fa-bars"></i>
             <i className="fas fa-times"></i>
-          </div>
+          </HambergerMenu>
 
-          <ul className="nav-list">
+          <NavList menuOpen={menuOpen}>
             <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home
@@ -26,29 +26,29 @@ function HomeHeader() {
             </li>
 
             <li className="nav-item">
-              <a href="#about" className="nav-link">
+              <a href="/about" className="nav-link">
                 About
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#offer" className="nav-link">
+              <a href="/offer" className="nav-link">
                 Offers
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#news" className="nav-link">
+              <a href="/news" className="nav-link">
                 News
               </a>
             </li>
 
             <li className="nav-item">
-              <a href="#contact" className="nav-link">
+              <a href="/contact" className="nav-link">
                 Contact
               </a>
             </li>
-          </ul>
+          </NavList>
         </Nav>
       </B.Container>
     </Header>
