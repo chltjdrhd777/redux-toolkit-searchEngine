@@ -73,7 +73,6 @@ export const NavList = styled(B.Ul)<{ menuOpen?: boolean }>`
 `;
 
 //# main
-
 //! hero //
 export const Hero = styled(B.Section)`
   width: 100%;
@@ -148,7 +147,34 @@ export const Booking = styled(B.Section)`
   }
 `;
 
-export const Form = styled(B.Form)``;
+export const Form = styled(B.Form)`
+  & .dots {
+    margin-left: 0.7rem;
+  }
+`;
+
+//! Hotels //
+export const Hotel = styled(B.Section)``;
+
+export const HotelList = styled.div``;
+
+export const HotelHeading = styled.h5`
+  text-align: center;
+  margin-bottom: 3rem;
+
+  & .heading {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  & .sub-heading {
+    font-size: 1.7rem;
+    font-family: "Courgette", cursive;
+    font-style: oblique;
+    color: ${({ theme }) => theme.colors.grayThree};
+  }
+`;
 
 //@ media
 export const Media = styled.div``;

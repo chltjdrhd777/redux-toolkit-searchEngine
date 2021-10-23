@@ -1,12 +1,12 @@
 import React from "react";
 import { B } from "components/styled";
-import { Booking } from "components/styled/Home.styled";
+import { Booking, Form } from "components/styled/Home.styled";
 
 function HomeBooking() {
   return (
     <Booking>
       <B.Container>
-        <form action="">
+        <Form action="">
           <div className="input-group">
             <label htmlFor="destination"> Destination</label>
             <input type="text" id="destination" />
@@ -43,13 +43,14 @@ function HomeBooking() {
               <option value="0">5</option>
             </select>
           </div>
+
           <B.Button className="form-btn btn-purple">
             search
             <span className="dots">
               <i className="fas fa-ellipsis-h"></i>
             </span>
           </B.Button>
-        </form>
+        </Form>
       </B.Container>
     </Booking>
   );
