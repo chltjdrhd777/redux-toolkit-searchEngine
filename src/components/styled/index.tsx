@@ -3,9 +3,10 @@ import styled from "@emotion/styled/macro";
 //commonly used component
 export const B = {
   Container: styled.div`
-    width: 100%;
-    max-width: 100%;
-    padding: 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
   `,
   Header: styled.header``,
   Main: styled.main``,

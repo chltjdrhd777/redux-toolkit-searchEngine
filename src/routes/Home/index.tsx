@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, createContext, useContext, useEffect } from "react";
 import HomeHeader from "./Header";
 import HomeMain from "./Main";
+import { useDispatch } from "react-redux";
+import { fetchCars } from "redux/Slice/searchSlice";
 
-function Home() {
+function Index() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log("hello");
+    dispatch(fetchCars());
+  }, []);
+
   return (
     <>
       <HomeHeader />
@@ -11,4 +20,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Index;

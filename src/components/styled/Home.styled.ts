@@ -1,18 +1,27 @@
 import styled from "@emotion/styled/macro";
 import { B } from "components/styled";
 
+//# home
+
 //# header
 export const HomeHeader = styled(B.Header)`
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(142, 68, 173, 0.85);
-  z-index: 1000;
+  & input[type="text"] {
+    width: 77%;
+    padding: 0.8rem 0.5rem;
+    background-color: #0d0c1d;
+    border: none;
+    outline: 2px solid #7c2af1;
+    color: #f8f4f5;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    &::placeholder {
+      color: white;
+    }
+  }
 `;
+
+//# main
+export const HomeMain = styled(B.Main)``;
 
 //@ media
 export const Media = styled.div``;

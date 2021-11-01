@@ -5,7 +5,10 @@ import { B } from "components/styled";
 function Index() {
   return (
     <HomeHeader>
-      <B.Container></B.Container>
+      <B.Container>
+        <h1 className="title">Car Information</h1>
+        <input className="searchbar" type="text" placeholder="What are you looking for?" />
+      </B.Container>
     </HomeHeader>
   );
 }

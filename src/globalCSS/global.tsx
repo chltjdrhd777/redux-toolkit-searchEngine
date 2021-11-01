@@ -52,6 +52,8 @@ const globalCSS = css`
   body {
     font-size: var(--general-font-size);
     font-family: var(--main-font-family-light);
+    background-color: #0d0c1d;
+    color: #f8f4f5;
   }
 
   a {
