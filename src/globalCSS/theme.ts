@@ -89,6 +89,10 @@ export const mediaQuery = {
   phone: renderMediaQuery("screen", deviceSizeUnits.mobileL),
 } as const;
 
+export const animation = {
+  fadeIn: "",
+};
+
 //@ CSS PART END ///////////////////////////////////////////////////////////////
 
 //# TYPE PART START ////////////////////////////////////////////////////////
